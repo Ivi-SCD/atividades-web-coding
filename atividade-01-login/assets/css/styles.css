@@ -1,0 +1,95 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;700&display=swap");
+
+:root {
+  --cor-verde-principal: #118870;
+  --cor-verde-secundaria: #21492e;
+}
+
+*,
+*::after,
+*::before {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  font-size: 100%;
+  list-style-type: none;
+  background-image: url(../img/background.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+}
+
+.navegacao {
+  height: 5vh;
+}
+
+.navegacao__lista {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  height: 100%;
+}
+
+.navegacao__lista__item {
+  font-weight: 800;
+  background-image: linear-gradient(to right, rgb(201, 159, 159), transparent);
+  color: var(--cor-verde-principal);
+}
+
+.navegacao__lista__item:hover {
+  font-size: 1.1rem;
+}
+
+main {
+  margin-top: 2em;
+}
+
+.form-login {
+  width: 20em;
+  margin: 0 auto;
+  padding: 1.2em;
+  background-image: linear-gradient(to bottom, #ffffff, transparent);
+  border-radius: 1em;
+  box-shadow: 0 0 1em rgba(0, 0, 0, 0.3);
+}
+
+.form-login__label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+.form-login__input {
+  width: 100%;
+  padding: 1em;
+  margin-bottom: 1.5em;
+  border: 0.1em solid var(--cor-verde-principal);
+  border-radius: 0.5em;
+}
+
+.form-login__button {
+  background-color: var(--cor-verde-principal);
+  color: #fff;
+  padding: 1em 2em;
+  border: none;
+  border-radius: 0.5em;
+  cursor: pointer;
+}
+
+.form-login__button:hover {
+  background-color: var(--cor-verde-secundaria);
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 1em 0;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
