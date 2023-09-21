@@ -1,0 +1,259 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>FashionTrends - Sua Loja de Moda</title>
+    <link
+      rel="stylesheet"
+      href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css"
+    />
+    <style>
+      header {
+        background-color: #333;
+        color: white;
+        padding: 10px 0;
+      }
+
+      #destaque-carousel {
+        margin-top: 20px;
+      }
+
+      .carousel-image {
+        padding-left: 12.5vw;
+        height: 50em; /* Para manter a proporção da imagem */
+      }
+
+      .card {
+        margin-bottom: 20px;
+      }
+
+      .sobre-nos {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+      }
+
+      .depoimentos {
+        background-color: #e9e9e9;
+        padding: 50px 0;
+      }
+
+      #formulario-contato {
+        background-color: #f9f9f9;
+        padding: 50px 0;
+      }
+    </style>
+  </head>
+  <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <a class="navbar-brand" href="#">FoodTrends</a>
+      <button
+        class="navbar-toggler"
+        type="button"
+        data-toggle="collapse"
+        data-target="#navbarNav"
+        aria-controls="navbarNav"
+        aria-expanded="false"
+        aria-label="Toggle navigation"
+      >
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item active">
+            <a class="nav-link" href="#">Início</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Produtos</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Sobre Nós</a>
+          </li>
+          <li class="nav-item">
+            <a class="nav-link" href="#">Contato</a>
+          </li>
+        </ul>
+      </div>
+    </nav>
+
+    <div id="destaque-carousel" class="carousel slide" data-ride="carousel">
+      <ol class="carousel-indicators">
+        <li
+          data-target="#destaque-carousel"
+          data-slide-to="0"
+          class="active"
+        ></li>
+        <li data-target="#destaque-carousel" data-slide-to="1"></li>
+        <li data-target="#destaque-carousel" data-slide-to="2"></li>
+      </ol>
+      <div class="carousel-inner">
+        <div class="carousel-item active">
+          <img
+            src="./assets/img/img.jpeg"
+            alt="Produto 1"
+            class="carousel-image"
+          />
+          <div class="carousel-caption">
+            <h3>Produto em Destaque 1</h3>
+            <p>Descrição breve do produto.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img.jpeg"
+            alt="Produto 2"
+            class="carousel-image"
+          />
+          <div class="carousel-caption">
+            <h3>Produto em Destaque 2</h3>
+            <p>Descrição breve do produto.</p>
+          </div>
+        </div>
+        <div class="carousel-item">
+          <img
+            src="./assets/img/img.jpeg"
+            alt="Produto 3"
+            class="carousel-image"
+          />
+          <div class="carousel-caption">
+            <h3>Produto em Destaque 3</h3>
+            <p>Descrição breve do produto.</p>
+          </div>
+        </div>
+      </div>
+      <a
+        class="carousel-control-prev"
+        href="#destaque-carousel"
+        role="button"
+        data-slide="prev"
+      >
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="sr-only">Anterior</span>
+      </a>
+      <a
+        class="carousel-control-next"
+        href="#destaque-carousel"
+        role="button"
+        data-slide="next"
+      >
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="sr-only">Próximo</span>
+      </a>
+    </div>
+
+    <!-- Seção "Sobre Nós" -->
+    <div class="container sobre-nos">
+      <div class="row">
+        <div class="col-md-6">
+          <h2>Sobre Nós</h2>
+          <p>
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Veniam
+            voluptatum incidunt, quidem corrupti esse, distinctio magnam ea
+            reprehenderit hic explicabo eos inventore, nulla unde eaque soluta
+            asperiores officia ullam modi?
+          </p>
+        </div>
+        <div class="col-md-6"></div>
+      </div>
+    </div>
+
+    <div class="container depoimentos">
+      <h2>Depoimentos de Clientes</h2>
+      <div class="row">
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Depoimento 1</h5>
+              <p class="card-text">
+                Lorem ipsum dolor sit amet, consectetur adipiscing elit. Quisque
+                consectetur quam eget odio accumsan, ut cursus lorem
+                sollicitudin.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Cliente 1</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <div class="card-body">
+              <h5 class="card-title">Depoimento 2</h5>
+              <p class="card-text">
+                Vestibulum id varius dolor. Nullam rhoncus, urna eu interdum
+                efficitur, arcu elit eleifend arcu, sit amet cursus eros turpis
+                nec quam.
+              </p>
+              <p class="card-text">
+                <small class="text-muted">Cliente 2</small>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="card">
+            <h5 class="card-title">Depoimento 3</h5>
+            <p class="card-text">
+              Praesent a varius est. In tincidunt augue vel justo efficitur,
+              eget interdum tellus dignissim. Donec eget ligula.
+            </p>
+            <p class="card-text"><small class="text-muted">Cliente 3</small></p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="formulario-contato" class="container">
+      <div class="container mt-5">
+        <h2>Entre em Contato</h2>
+        <form>
+          <div class="form-group">
+            <label for="nome">Nome:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="nome"
+              name="nome"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="email">E-mail:</label>
+            <input
+              type="email"
+              class="form-control"
+              id="email"
+              name="email"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="assunto">Assunto:</label>
+            <input
+              type="text"
+              class="form-control"
+              id="assunto"
+              name="assunto"
+              required
+            />
+          </div>
+          <div class="form-group">
+            <label for="mensagem">Mensagem:</label>
+            <textarea
+              class="form-control"
+              id="mensagem"
+              name="mensagem"
+              rows="5"
+              required
+            ></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary">Enviar</button>
+        </form>
+      </div>
+    </div>
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  </body>
+</html>
